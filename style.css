@@ -1,19 +1,85 @@
-.container{
-    
-
+body {
+    color: black;
 }
-.launch-time{
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    padding: 0 8%;
+}
+
+.content {
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    text-align: center;
+    margin-bottom: 10px;
+    /* Adjust as needed to reduce space between h1 and launch-time */
+}
+
+.content h1 {
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    /* Adjust as needed to reduce space between h1 and launch-time */
+}
+
+.content h1 span {
+    color: #0095ff;
+}
+
+.launch-time {
     display: flex;
 }
+
 .launch-time div {
     flex-basis: 100px;
-
 }
-.launch-time div span{
 
-}
-.launch-time div p{
+.launch-time div span {}
+
+.launch-time div p {
     font-size: 60px;
     margin-bottom: -14px;
+}
 
+.content button {
+    background-color: #0095ff;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.15385;
+    margin: 50px 0;
+    /* Add space above the button */
+    outline: none;
+    padding: 12px 24px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.content button:hover,
+.content button:focus {
+    background-color: #07c;
+}
+
+.content button:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.content button:active {
+    background-color: #0064bd;
+    box-shadow: none;
 }
